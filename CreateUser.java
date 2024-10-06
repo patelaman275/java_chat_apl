@@ -52,6 +52,7 @@ public class CreateUser extends JFrame implements ActionListener {
 
         add(panel);
     }
+    ////////////////////////////////////////
 
     private void showAvatarSelector() {
         JDialog avatarDialog = new JDialog(this, "Choose Avatar", true);
@@ -77,6 +78,8 @@ public class CreateUser extends JFrame implements ActionListener {
         JOptionPane.showMessageDialog(this, "Selected Avatar: " + new File(selectedAvatar).getName());
     }
 
+
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == createButton) {
@@ -100,6 +103,10 @@ public class CreateUser extends JFrame implements ActionListener {
         }
     }
 
+
+
+
+    
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             CreateUser createUser = new CreateUser();
