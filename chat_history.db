@@ -1,0 +1,7 @@
+String createTableQuery = "CREATE TABLE IF NOT EXISTS chat_history ("
+        + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+        + "username TEXT,"
+        + "message TEXT,"
+        + "timestamp DATETIME DEFAULT CURRENT_TIMESTAMP"
+        + ")";
+        
