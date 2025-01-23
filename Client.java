@@ -13,7 +13,7 @@ public class Client implements ActionListener, Runnable {
     private final int serverPort;
     public final String username;
     public final Color themeColor;
-    public final String avatarPath; // Add avatarPath variable
+    public final String avatarPath; 
 
     private Socket socket;
     private DataInputStream dataInputStream;
